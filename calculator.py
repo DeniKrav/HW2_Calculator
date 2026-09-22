@@ -1,14 +1,15 @@
 def main(x, op, y):
     if op == '+':
-        print(addition(int(x),int(y)))
+        print(addition(float(x),float(y)))
     if op == '*':
-        print(multiplication(int(x),int(y)))
+        print(multiplication(float(x),float(y)))
     if op == '-':
-        print(subtraction(int(x),int(y)))
+        print(subtraction(float(x),float(y)))
     if op == '/':
         if y != 0:
-            print(division(int(x),int(y)))
+            print(division(float(x),float(y)))
         else:
             print('На ноль делить нельзя! Введите другое выражение')
 
 main(*input().split())
+
